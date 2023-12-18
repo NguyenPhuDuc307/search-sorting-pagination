@@ -3,20 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using CourseManagement.Data;
 
 #nullable disable
 
-namespace CourseManagement.Migrations
+namespace CourseManagement.Data.Migrations
 {
     [DbContext(typeof(CourseDbContext))]
-    [Migration("20231213154519_AddAuthorInCourse")]
-    partial class AddAuthorInCourse
+    partial class CourseDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
