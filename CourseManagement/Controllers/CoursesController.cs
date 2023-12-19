@@ -79,7 +79,7 @@ namespace CourseManagement.Controllers
 
             if (ModelState.IsValid)
             {
-                await _coursesService.Update(id, course);
+                await _coursesService.Update(course);
                 return RedirectToAction(nameof(Index));
             }
             return View(course);
