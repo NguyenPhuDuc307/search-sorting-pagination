@@ -1,4 +1,4 @@
-# Add search, sorting, pagination to ASP.NET Core MVC application
+# Part 7: Add search, sorting, pagination to ASP.NET Core MVC application
 
 >This tutorial teaches how to add search, sorting, pagination to ASP.NET Core MVC application. This guide is compiled based on [Get started with ASP.NET Core MVC](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-8.0&tabs=visual-studio-code) by `Microsoft`.
 
