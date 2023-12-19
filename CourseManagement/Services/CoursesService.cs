@@ -81,7 +81,7 @@ namespace CourseManagement.Services
             return _mapper.Map<CourseViewModel>(course);
         }
 
-        public async Task<int> Update(int Id, CourseViewModel request)
+        public async Task<int> Update(CourseViewModel request)
         {
             if (!CourseExists(request.Id))
             {
