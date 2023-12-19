@@ -6,7 +6,7 @@ In this section:
 
 - Add search, sorting, pagination to ASP.NET Core MVC application.
 
-Before coming to this guide, please refer to [Use dependency injection in .NET](https://github.com/NguyenPhuDuc307/dependency-injection).
+Before coming to this guide, please refer to [Part 6: Use dependency injection in .NET](https://github.com/NguyenPhuDuc307/dependency-injection).
 
 ## Add paging utility class
 
@@ -225,4 +225,4 @@ dotnet watch run
 
 ![Run app](resources/run-app.png)
 
-Next let's [Introduction to relationships](https://github.com/NguyenPhuDuc307/relationships).
+Next let's [Part 8: Introduction to relationships](https://github.com/NguyenPhuDuc307/relationships).
