@@ -225,4 +225,4 @@ dotnet watch run
 
 ![Run app](resources/run-app.png)
 
-Next let's [Part 8: Introduction to relationships](https://github.com/NguyenPhuDuc307/relationships).
+Next let's [Part 8: Introduction to relationships](https://github.com/NguyenPhuDuc307/introduction-relationship).
