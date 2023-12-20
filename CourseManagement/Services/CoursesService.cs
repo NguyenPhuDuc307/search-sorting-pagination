@@ -41,7 +41,7 @@ namespace CourseManagement.Services
             return _mapper.Map<IEnumerable<CourseViewModel>>(courses);
         }
 
-        public async Task<IEnumerable<CourseViewModel>> GetAllFilter(string sortOrder, string currentFilter, string searchString, int? pageNumber, int pageSize)
+        public async Task<PaginatedList<CourseViewModel>> GetAllFilter(string sortOrder, string currentFilter, string searchString, int? pageNumber, int pageSize)
         {
             if (searchString != null)
             {

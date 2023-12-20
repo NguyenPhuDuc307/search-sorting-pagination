@@ -51,13 +51,13 @@ The `Create` method in this code takes page size and page number and applies the
 Add the following method to `ICoursesService.cs` interface:
 
 ```c#
-Task<IEnumerable<CourseViewModel>> GetAllFilter(string sortOrder, string currentFilter, string searchString, int? pageNumber, int pageSize);
+Task<PaginatedList<CourseViewModel>> GetAllFilter(string sortOrder, string currentFilter, string searchString, int? pageNumber, int pageSize);
 ```
 
 Implement `GetAllFilter` method in `CoursesService.cs`:
 
 ```c#
-public async Task<IEnumerable<CourseViewModel>> GetAllFilter(string sortOrder, string currentFilter, string searchString, int? pageNumber, int pageSize)
+public async Task<PaginatedList<CourseViewModel>> GetAllFilter(string sortOrder, string currentFilter, string searchString, int? pageNumber, int pageSize)
 {
     if (searchString != null)
     {
@@ -116,6 +116,8 @@ These are ternary statements. The first one specifies that if the `sortOrder` pa
 The `ViewData` element named `CurrentSort` provides the view with the current sort order, because this must be included in the paging links in order to keep the sort order the same while paging.
 
 The `ViewData` element named `CurrentFilter` provides the view with the current filter string. This value must be included in the paging links in order to maintain the filter settings during paging, and it must be restored to the text box when the page is redisplayed.
+
+Add ```@using CourseManagement.ViewModels``` into `Views/_ViewImports.cshtml`
 
 Update View `Index` in `Views/Courses/Index.cshtml` with the following code:
 
